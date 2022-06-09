@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* 초기화 */
+body, h1, h2, h3, h4, h5, h6, ul, li, p { margin : 0; padding : 0;}
+ul li { list-style: none;}
+a { text-decoration : none; }
+hr { display : none; }
+.hidden { position : absolute; left : -9999px; }
+
+/* 웹폰트 */
+body { width : 800px; margin : 0 auto; margin : 8px auto 0 ; font-family: 'Noto Sans KR', sans-serif }
+#content h2 { font-family: 'Jua', sans-serif; }
+
+/* 헤더  */       
+/* 복습필수! */
+#header { display : flex; flex-flow : row nowrap; justify-content : space-between;
+    align-items: center;
+    
+    position : relative;  height : 150px; background : #f46075  }
+#header h1 { width : 185px; }
+#header h1 a { display : block; height : 150px; background : url(/02_강아지입양/html/images/logo.png) no-repeat; text-indent: -5000px;} /* 185X150 */
+
+/* gnb */
+/* #gnb { position : absolute; bottom : 45px; left : 297px; }
+#gnb ul { }
+#gnb ul li { float : left; margin-right : 20px; }
+#gnb ul li a { color : #fff; } */
+
+#gnb { }
+#gnb ul { display : flex; margin-right : 107px;}
+#gnb ul li { margin-left : 30px; }
+#gnb ul li a { color : #fff;}
+
+/* 본문 */
+main { width : 564px; float : left;}
+
+/* content */
+#content h2 { line-height : 82px; margin-left : 6px;}
+#content article { width : 272px; height : 242px; 
+   float : left; margin : 0 0 10px 10px;
+    border : 1px solid #cccccc; box-sizing : border-box; 
+padding : 25px 10px 0px;}
+#content .dogHouse:hover { border : 1px solid #01ff23; background : #000;}
+#content .dogHouse:hover a { color : #fff; }
+#content .dogFood:hover { border : 1px solid red; background : #ccc;}
+#content .dogWater:hover { border : 1px solid blue; background : #f46075;}
+#content .dogName:hover { border : 1px solid #02c4ff; background : #01ff23}
+#content article a { color : #333;}
+#content article a h3 { margin-bottom : 5px; font-size : 16px; }
+#content article a p { font-size : 14px; line-height : 18px;}
+
+/* aside */
+/* #puppyPhoto { width : 202px; height : 484px; margin-top : 82px; float : right; background : #ffffcc;
+display : flex; flex-direction : column; justify-content: center; align-items : center; box-sizing: border-box;} */
+#puppyPhoto { width : 202px; float : right; margin-top : 82px; border : 1px solid #006400;
+    box-sizing : border-box; background : #ffc; padding : 10px 0; text-align : center; }
+
+/* footer */
+#footer { clear : both; padding : 20px 0; background : #333333; text-align: center; color : #fff;} 
